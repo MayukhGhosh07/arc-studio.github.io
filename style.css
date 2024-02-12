@@ -1,0 +1,862 @@
+*{
+    margin: 0;
+    bottom: 0;
+    scroll-behavior: smooth;
+    cursor: default;
+
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    
+
+} 
+::-webkit-scrollbar{
+    display: none;
+}
+@font-face {
+    font-family: 'Kajiro';
+    src: url('Kajiro.eot');
+    src: local('Kajiro'),
+        url('Kajiro.eot?#iefix') format('embedded-opentype'),
+        url('Kajiro.woff2') format('woff2'),
+        url('Kajiro.woff') format('woff'),
+        url('Kajiro.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:handwriting;
+    src: url(Ben\ Brown.ttf);
+}
+@font-face {
+    font-family:'Gilroy-Bold';
+    src: url(Gilroy-Black.ttf);
+}
+@font-face {
+    font-family:'Gilroy-Bold-Italic';
+    src: url('Gilroy-BlackItalic.ttf');
+}
+@font-face {
+    font-family:'Gilroy-Light-Italic';
+    src: url(Gilroy-LightItalic.ttf);
+}
+
+#preloader-wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #191919;
+    z-index: 999;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+
+
+.num-wrap{
+    background: #dcc6c6;
+    background-color: #191919;
+  
+}
+.loader-end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.load-line{
+    color: transparent;
+    background-color: #Fff;
+    width: 0vw;
+    height: 5px;
+    border-radius: 30px;
+}
+
+#loading-nums{
+    
+    color: #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 3rem;
+   
+   
+}
+.loader-top{
+    
+    padding-bottom: 5rem;
+}
+
+.loader-top img{
+    border-radius: 1.2em;
+    height: 30vw;
+    
+    
+
+}
+
+ #main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: #232025;
+    overflow-x: hidden;
+
+ }
+
+ 
+
+#page1{
+
+background-color: #232025;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+gap: 4rem;
+padding-bottom: 3rem;
+    
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+ 
+   
+    
+
+
+}
+#nav-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#nav-left h4{
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    
+    
+}
+
+#nav-right h4{
+    color: #fff;
+    font-family: handwriting;
+    font-size: 2rem;
+}
+#nav-left h4::after{
+    content:"";
+    position: absolute;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    top: 0rem;
+    background-color: #fff;
+    width: 100%;
+    height: 0.01rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+#nav-left h4:hover::after{
+    left: 0;
+}
+
+#main-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+   
+   
+   
+   
+}
+
+#main-hero-text h1{
+    font-family: 'Kajiro';  
+    color: #fff;
+    font-size: 10rem;
+    letter-spacing: 1rem;
+    
+}
+#main-para{
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20rem;
+
+    
+   
+}
+#main-para p{
+    color: #ffffff70;
+    font-family: 'Gilroy-Bold';
+    line-height:2rem;
+    padding-left: 1rem;
+    border-left: 1px solid #ffffff56 ;
+}
+
+#main-para h4{
+    color: #ffffff98;
+    font-family: 'Gilroy-Bold';
+    
+    
+}
+
+#page2{
+    background-color: #232025;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.banner1{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 10rem;
+    position: relative;
+    white-space: nowrap;
+
+}
+.banner2{
+    color: #fff;
+    font-family: 'Gilroy-Bold'; 
+    font-size: 10rem;
+    position: relative;
+    white-space: nowrap;
+}
+.banner3{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 10rem;
+    position: relative;
+    white-space: nowrap;
+}
+.banner4{
+    color: #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 10rem;
+    position: relative;
+    white-space: nowrap;
+}
+.banner5{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 10rem;
+    position: relative;
+    white-space: nowrap;
+}
+.banner6{
+    color: #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 10rem;
+    position: relative;
+    white-space: nowrap;
+}
+.banner7{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 10rem;
+    position: relative;
+    white-space: nowrap;
+}
+#page3{
+    background-color: #232025;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#work-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+   
+    
+
+}
+.work-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.work-col-3{
+    gap: 10rem;
+}
+
+.work-col img{
+    height: 7rem;
+    
+}
+.work-h3{
+    font-family: 'Kajiro';
+    color: #fff;
+    transform: rotate(90deg);
+    font-size: 7rem;
+    letter-spacing: 1rem;
+    white-space: nowrap;
+}
+.work-h3 span{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px #fff;
+    text-stroke: 0.5px #fff;
+}
+
+#work-wrapper2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    display: none;
+    
+    
+
+}
+#work-wrapper3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    display: none;
+    
+    
+
+}
+
+.work-col-resp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+.work-col-resp-1{
+    transform: translateX(88px);
+}
+.work-col-resp-2{
+    transform: rotate(90deg);
+    gap: 3rem;
+    
+}
+
+
+.work-col-resp img{
+    height: 7rem;
+
+    
+}
+.work-resp-h3{
+    font-family: 'Kajiro';
+    color: #fff;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    
+    white-space: nowrap;
+
+
+}
+.work-resp-h3 span{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px #fff;
+    text-stroke: 0.5px #fff;
+}
+
+
+.page3-lower{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+}
+.lower-line{
+    background-color: #ffffff56;
+    width: 50px;
+    height:0.5px;
+    
+}
+.lower-h4{
+color: #ffffff56;
+font-family: 'Gilroy-Bold-Italic';
+
+}
+#page4{
+    padding:5rem 0rem;
+    padding-bottom: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #232025;
+}
+.contact-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.contact-wrapper h2{
+    color: #dcc6c6;
+    font-family: 'Gilroy-Bold';
+    font-size:17rem;
+   white-space: nowrap;
+
+}
+.input-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.input-box i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+
+    
+}
+
+::placeholder {
+    font-family: 'Gilroy-Bold';
+    color: #ffffff62;
+    font-size: 2rem;
+  }
+  
+  ::-ms-input-placeholder { 
+    font-family: 'Gilroy-Bold';
+    color: #ffffff62;
+    font-size: 2rem;
+    
+  }
+#mail-inp{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    height: 50px;
+    color: #fff;
+    width: 40vw;
+}
+
+
+
+#page5{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.foot-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.foot-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    
+    
+}
+.foot-right h4{
+    color: #dcc6c6;
+    font-family: 'Gilroy-Bold';
+    position: relative;
+    padding-bottom: 4px;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+.foot-right h4::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    left: 100%;
+    right:0;
+    bottom: 0;
+    transition: all 0.3s linear;
+}
+.foot-right h4:hover::after{
+  left: 0;
+}
+.foot-left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    
+}
+.foot-left h2{
+    color: #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 3rem;
+}
+
+.foot-left p{
+    color:#dcc6c6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+/* --------------RESPONSIVENESS STARTS-----------------*/
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .loader-top img{
+        border-radius: 1.2em;
+        height: 50vw;
+        
+        
+    
+    }
+    #main-hero{
+        flex-direction: column;
+
+    }
+    #main-hero-text h1{
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    #main-para{
+        flex-direction: column;
+        gap: 5rem;
+      padding: 0;
+      padding-left: 3px;
+      padding-right: 3px;
+      
+    }
+    #main-para p{
+        border: none;
+    }
+
+    #main-para h4{
+       white-space: nowrap; 
+    }
+    .banner{
+        font-size: 4rem;
+    }
+    #work-wrapper{
+       display: none;
+    
+        
+    
+    }
+
+    #work-wrapper2{
+       display: flex;
+
+    }
+   
+    .contact-wrapper{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .contact-wrapper h2{
+       font-size: 8.5rem;
+    
+    }
+    #mail-inp{
+        width: 67vw;
+    }
+    ::placeholder{
+        font-size: 0.5rem;
+    }
+    .foot-wrapper{
+       justify-content: center;
+       flex-direction: row;
+       gap: 3rem;
+    }
+    .foot-left h2{
+        font-size: 1.3rem;
+    }
+    
+
+
+}
+
+
+
+@media only screen and (min-width:481px) and (max-width:552px){
+    .loader-top img{
+        border-radius: 1.2em;
+        height: 50vw;
+        
+        
+    
+    }
+    #main-hero{
+        flex-direction: column;
+
+    }
+    #main-hero-text h1{
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    #main-para{
+        flex-direction: column;
+        gap: 5rem;
+      padding: 0;
+      padding-left: 3px;
+      padding-right: 3px;
+      
+    }
+    #main-para p{
+        border: none;
+    }
+
+    #main-para h4{
+       white-space: nowrap; 
+    }
+    .banner{
+        font-size: 4rem;
+    }
+    #work-wrapper{
+       display: none;
+    
+        
+    
+    }
+
+    #work-wrapper2{
+       display: flex;
+
+    }
+   
+    .contact-wrapper{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .contact-wrapper h2{
+       font-size: 8.5rem;
+    
+    }
+    #mail-inp{
+        width: 67vw;
+    }
+    ::placeholder{
+        font-size: 0.5rem;
+    }
+    .foot-wrapper{
+       justify-content: center;
+       flex-direction: row;
+       gap: 3rem;
+    }
+    .foot-left h2{
+        font-size: 1.3rem;
+    }
+    
+
+
+}
+
+
+
+@media only screen and (min-width:553px) and (max-width:1040px){
+    .loader-top img{
+        border-radius: 1.2em;
+        height: 46vw;
+        
+        
+    
+    }
+    #main-hero{
+        flex-direction: column;
+
+    }
+    #main-hero-text h1{
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    #main-para{
+        flex-direction: column;
+        gap: 5rem;
+      padding: 0;
+      padding-left: 3px;
+      padding-right: 3px;
+      
+    }
+    #main-para p{
+        border: none;
+    }
+
+    #main-para h4{
+       white-space: nowrap; 
+    }
+    .banner{
+        font-size: 4rem;
+    }
+    #work-wrapper{
+       display: none;
+    
+        
+    
+    }
+
+    #work-wrapper2{
+       display: none;
+
+    }
+    #work-wrapper3{
+        display: flex;
+    }
+    .work3-col-resp-3{
+        transform: translateX(-82px);
+    }
+   
+    .contact-wrapper{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .contact-wrapper h2{
+       font-size: 8.5rem;
+    
+    }
+    #mail-inp{
+        width: 67vw;
+    }
+    ::placeholder{
+        font-size: 0.5rem;
+    }
+    .foot-wrapper{
+       justify-content: center;
+       flex-direction: row;
+       gap: 3rem;
+    }
+    .foot-left h2{
+        font-size: 1.3rem;
+    }
+    
+
+
+}
+@media only screen and (min-width:732px) and (max-width:1040px){
+    #main-hero{
+        flex-direction: row;
+        gap:5rem;
+
+    }
+    .foot-wrapper{
+        justify-content: center;
+        flex-direction: row;
+        gap: 22rem;
+     }
+    
+}
+@media only screen and (min-width:1041px) and (max-width:1204px){
+    #main-hero{
+        flex-direction: row;
+        gap:2rem;
+
+    }
+    #main-hero-text h1{
+        text-align: center;
+        letter-spacing: 0;
+    }
+    #main-para h4{
+       text-align: center;
+        
+        
+    }
+}
+@media only screen and (min-width:1044px) and (max-width:1608px){
+    .contact-wrapper h2{
+        color: #dcc6c6;
+        font-family: 'Gilroy-Bold';
+        font-size:14rem;
+       white-space: nowrap;
+    
+    }
+
+}
+
+@media only screen and (min-width:952px) and (max-width:1020px){
+
+    .loader-top img{
+        border-radius: 1.2em;
+        height: 43vw;
+        
+        
+    
+    }
+
+}
+
+
+
+/*--------------RESPONSIVENESS ENDS----------------- */
+
+
+
+
+
+
+
+
+
