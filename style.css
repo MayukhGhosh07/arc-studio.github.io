@@ -16,18 +16,6 @@ body,html{
     display: none;
 }
 @font-face {
-    font-family: 'Kajiro';
-    src: url('Kajiro.eot');
-    src: local('Kajiro'),
-        url('Kajiro.eot?#iefix') format('embedded-opentype'),
-        url('Kajiro.woff2') format('woff2'),
-        url('Kajiro.woff') format('woff'),
-        url('Kajiro.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
     font-family:handwriting;
     src: url(Ben\ Brown.ttf);
 }
@@ -42,6 +30,10 @@ body,html{
 @font-face {
     font-family:'Gilroy-Light-Italic';
     src: url(Gilroy-LightItalic.ttf);
+}
+@font-face {
+    font-family: heavy;
+    src: url(HeadingNowTrial-18Heavy.ttf);
 }
 
 #preloader-wrapper{
@@ -59,6 +51,8 @@ body,html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    
  
 }
 
@@ -111,6 +105,7 @@ body,html{
     flex-direction: column;
     gap: 0;
     background-color: #232025;
+  
     overflow-x: hidden;
 
  }
@@ -153,7 +148,7 @@ padding-bottom: 3rem;
     overflow: hidden;
     position: relative;
     color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Gilroy-Bold';
     transition: all 0.3s linear;
     cursor: pointer;
     
@@ -194,8 +189,10 @@ padding-bottom: 3rem;
    
 }
 
+
+
 #main-hero-text h1{
-    font-family: 'Kajiro';  
+    font-family: heavy;
     color: #fff;
     font-size: 10rem;
     letter-spacing: 1rem;
@@ -235,6 +232,7 @@ padding-bottom: 3rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 7.3rem;
 }
 .banner-wrapper{
     display: flex;
@@ -305,14 +303,23 @@ padding-bottom: 3rem;
     position: relative;
     white-space: nowrap;
 }
+
+.banner-border{
+    color: transparent;
+    background-color: #ffffff6b;
+    width: 0vw;
+    height: 2px;
+    border-radius: 12px;
+}
+
 #page3{
-    background-color: #232025;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    display: flex;
+    background-color: #232025; 
+     padding-top: 3rem;
+    padding-bottom: 1rem; 
+     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 #work-wrapper{
     display: grid;
@@ -338,7 +345,7 @@ padding-bottom: 3rem;
     
 }
 .work-h3{
-    font-family: 'Kajiro';
+    font-family: heavy;
     color: #fff;
     transform: rotate(90deg);
     font-size: 7rem;
@@ -399,7 +406,7 @@ padding-bottom: 3rem;
     
 }
 .work-resp-h3{
-    font-family: 'Kajiro';
+    font-family: heavy;
     color: #fff;
     font-size: 5rem;
     letter-spacing: 1rem;
@@ -436,6 +443,8 @@ color: #ffffff56;
 font-family: 'Gilroy-Bold-Italic';
 
 }
+
+
 #page4{
     padding:5rem 0rem;
     padding-bottom: 11rem;
@@ -444,6 +453,7 @@ font-family: 'Gilroy-Bold-Italic';
     align-items: center;
     justify-content: center;
     background-color: #232025;
+    gap: 3rem;
 }
 .contact-wrapper{
     display: flex;
@@ -486,6 +496,10 @@ font-family: 'Gilroy-Bold-Italic';
     font-size: 2rem;
     
   }
+
+
+
+
 #mail-inp{
     background-color: transparent;
     border: none;
@@ -495,6 +509,15 @@ font-family: 'Gilroy-Bold-Italic';
     color: #fff;
     width: 40vw;
 }
+
+.contact-border{
+    color: transparent;
+    background-color: #ffffff6b;
+    width: 0vw;
+    height: 2px;
+    border-radius: 12px;
+}
+
 
 
 
@@ -515,6 +538,7 @@ font-family: 'Gilroy-Bold-Italic';
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    gap: 0.5rem;
     
     
 }
@@ -522,7 +546,6 @@ font-family: 'Gilroy-Bold-Italic';
     color: #dcc6c6;
     font-family: 'Gilroy-Bold';
     position: relative;
-    padding-bottom: 4px;
     overflow: hidden;
     transition: all 0.3s linear;
 }
@@ -550,9 +573,9 @@ font-family: 'Gilroy-Bold-Italic';
 .foot-left h2{
     color: #fff;
     font-family: 'Gilroy-Bold';
+    font-family: handwriting;
     font-size: 3rem;
 }
-
 .foot-left p{
     color:#dcc6c6;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -575,12 +598,15 @@ font-family: 'Gilroy-Bold-Italic';
     }
     #main-hero{
         flex-direction: column;
+        padding: 0;
 
     }
     #main-hero-text h1{
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: center;
         letter-spacing: 0;
+        
+       
     }
     #main-para{
         flex-direction: column;
@@ -595,6 +621,7 @@ font-family: 'Gilroy-Bold-Italic';
     }
 
     #main-para h4{
+
        white-space: nowrap; 
     }
     .banner{
@@ -603,7 +630,7 @@ font-family: 'Gilroy-Bold-Italic';
     #work-wrapper{
        display: none;
     
-        
+    
     
     }
 
@@ -624,7 +651,7 @@ font-family: 'Gilroy-Bold-Italic';
         width: 67vw;
     }
     ::placeholder{
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
     .foot-wrapper{
        justify-content: center;
@@ -654,7 +681,7 @@ font-family: 'Gilroy-Bold-Italic';
 
     }
     #main-hero-text h1{
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: center;
         letter-spacing: 0;
     }
@@ -700,12 +727,12 @@ font-family: 'Gilroy-Bold-Italic';
         width: 67vw;
     }
     ::placeholder{
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
     .foot-wrapper{
        justify-content: center;
        flex-direction: row;
-       gap: 3rem;
+       gap: 12rem;
     }
     .foot-left h2{
         font-size: 1.3rem;
@@ -730,7 +757,7 @@ font-family: 'Gilroy-Bold-Italic';
 
     }
     #main-hero-text h1{
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: center;
         letter-spacing: 0;
     }
@@ -782,12 +809,12 @@ font-family: 'Gilroy-Bold-Italic';
         width: 67vw;
     }
     ::placeholder{
-        font-size: 0.5rem;
+        font-size:2rem;
     }
     .foot-wrapper{
        justify-content: center;
        flex-direction: row;
-       gap: 3rem;
+       gap: 16rem;
     }
     .foot-left h2{
         font-size: 1.3rem;
@@ -835,6 +862,17 @@ font-family: 'Gilroy-Bold-Italic';
     }
 
 }
+@media only screen and (min-width:1041px) and (max-width:1043px){
+    .contact-wrapper h2{
+        color: #dcc6c6;
+        font-family: 'Gilroy-Bold';
+        font-size:12rem;
+       white-space: nowrap;
+    
+    }
+
+}
+
 
 @media only screen and (min-width:952px) and (max-width:1020px){
 
