@@ -34,13 +34,13 @@ Shery.makeMagnet(".hero-img", {
 
 
  const timeout=setTimeout(() => {
-   if(window.innerWidth>1203){
+   if(window.innerWidth>1042){
      Shery.mouseFollower({
        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
        duration: 1,
      });
      }
-
+     
   Shery.textAnimate("#main-hero-text h1", {
     style: 2,
     y: 10,
@@ -49,6 +49,8 @@ Shery.makeMagnet(".hero-img", {
     multiplier: 0.1,
   });
  
+
+
  gsap.from("#nav #nav-left",{
      opacity:0,
      duration:1.5,
@@ -224,6 +226,14 @@ Shery.imageMasker(".work-col img", {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
 });
+
+Shery.imageMasker(".work-col-resp img", {
+  mouseFollower:true,
+  text: "VIEW",
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
 Shery.makeMagnet(".work-col img", {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
@@ -248,17 +258,42 @@ const interval = setInterval(() => {
 
 
 //ANIMATION OF PRELOADER
-gsap.to("#preloader-wrapper",{
+ gsap.to("#preloader-wrapper",{
   top:"-500%",
   duration:3,
   delay:6,
 
-})
+ })
 
 gsap.to(".load-line",{
-  width:"70vw",
+  width:"50vw",
   duration:6,
 
+})
+
+gsap.to(".banner-border",{
+  duration:2.5,
+  width:"100vw",
+  scrollTrigger:{
+    trigger:".banner-border",
+    scroller:"#main",
+    scrub:true,
+    start:"top 90%",
+    end:"top 40%",
+
+  }
+})
+gsap.to(".contact-border",{
+  duration:2.5,
+  width:"100vw",
+  scrollTrigger:{
+    trigger:".contact-border",
+    scroller:"#main",
+    scrub:true,
+    start:"top 90%",
+    end:"top 40%",
+
+  }
 })
 
 
