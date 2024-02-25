@@ -29,6 +29,26 @@ Shery.makeMagnet(".hero-img", {
   duration: 1,
 });
 
+Shery.makeMagnet("#nav-right h4", {
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
+Shery.makeMagnet("#nav-left h4", {
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
+Shery.makeMagnet("#main-hero-text h1", {
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
+Shery.makeMagnet(".contact-wrapper h2", {
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
 
 
 
@@ -83,10 +103,7 @@ Shery.makeMagnet(".hero-img", {
  
  })
 
-}, 6020);
-
-
-
+},7500);
 
 gsap.to(".banner1",{
   x:1030,
@@ -259,9 +276,9 @@ const interval = setInterval(() => {
 
 //ANIMATION OF PRELOADER
  gsap.to("#preloader-wrapper",{
-  top:"-500%",
+   top:"-500%",
   duration:3,
-  delay:6,
+  delay:7.5,
 
  })
 
@@ -283,6 +300,7 @@ gsap.to(".banner-border",{
 
   }
 })
+
 gsap.to(".contact-border",{
   duration:2.5,
   width:"100vw",
@@ -295,6 +313,29 @@ gsap.to(".contact-border",{
 
   }
 })
+
+gsap.to(".loader-top",{
+  delay:6.1,
+  display:"None",
+  duration:1.2
+})
+
+gsap.to(".loader-end",{
+  delay:6.1,
+  display:"None",
+  duration:1.2
+})
+
+gsap.to(".loader-text",{
+  delay:6.2,
+  duration:1,
+  transform:"scale(1.5)",
+  opacity:"100%",
+  display:"Inline"
+
+
+})
+
 
 
 
