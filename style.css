@@ -666,9 +666,9 @@ font-family: 'Gilroy-Bold-Italic';
         font-size: 1.5rem;
     }
     .foot-wrapper{
-       justify-content: center;
+      
        flex-direction: row;
-       gap: 3rem;
+      
     }
     .foot-left h2{
         font-size: 1.3rem;
@@ -742,9 +742,9 @@ font-family: 'Gilroy-Bold-Italic';
         font-size: 1.5rem;
     }
     .foot-wrapper{
-       justify-content: center;
+      
        flex-direction: row;
-       gap: 12rem;
+       
     }
     .foot-left h2{
         font-size: 1.3rem;
@@ -824,9 +824,9 @@ font-family: 'Gilroy-Bold-Italic';
         font-size:2rem;
     }
     .foot-wrapper{
-       justify-content: center;
+       
        flex-direction: row;
-       gap: 16rem;
+      
     }
     .foot-left h2{
         font-size: 1.3rem;
@@ -842,9 +842,9 @@ font-family: 'Gilroy-Bold-Italic';
 
     }
     .foot-wrapper{
-        justify-content: center;
+        
         flex-direction: row;
-        gap: 22rem;
+        
      }
     
 }
