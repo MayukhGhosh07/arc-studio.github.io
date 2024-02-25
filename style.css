@@ -69,6 +69,8 @@ body,html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    transform: translateY(-50px);
 }
 .load-line{
     color: transparent;
@@ -87,16 +89,26 @@ body,html{
    
 }
 .loader-top{
-    
     padding-bottom: 5rem;
 }
-
-.loader-top img{
-    border-radius: 1.2em;
-    height: 30vw;
-    
-    
-
+.loader-heading{
+    color: #fff;
+    font-family: 'heavy';
+    font-size: 11vmax;
+}
+.loader-heading1{
+    color: transparent;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.6px;
+}
+.loader-text{
+    display: none;
+    transform: scale(0);
+    opacity: 0;
+    font-family: handwriting;
+    font-size: 11vw;
+    color: #fff;
+    white-space: nowrap;
 }
 
  #main{
